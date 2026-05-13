@@ -30,3 +30,26 @@ EXAMEN_U2/
 │   ├── operaciones.html  # Módulo de operaciones matemáticas
 │   ├── notas.html        # Procesamiento de arreglos (Notas)
 │   └── guardar.html      # Visor del archivo resultados.txt
+```
+
+📚 Temas Evidenciados
+El sistema demuestra el dominio de los siguientes conceptos tratados en clase:
+
+Variables y E/S: Manejo de datos y flujos cin / cout.
+
+Operadores: Cálculos aritméticos con validación de división para cero.
+
+Arreglos Unidimensionales: Registro y procesamiento de 5 notas académicas.
+
+Estructuras de Control: Uso de if-else, for y do-while para el menú.
+
+Persistencia: Almacenamiento de reportes con fecha y nombre en resultados.txt.
+
+📝 Instrucciones de Uso
+Clonar el repositorio.
+
+Compilar y ejecutar el archivo src/main.cpp para generar los datos de persistencia.
+
+Abrir templates/index.html en el navegador para explorar la interfaz.
+
+En la sección "Guardar Datos", presionar el botón refrescar para visualizar los cambios realizados desde el motor C++.
