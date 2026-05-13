@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Guardar - UTA</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand"><h1>🍎</h1><h2>SOFTWARE ACADEMY</h2></div>
+        <nav class="menu">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="operaciones.html">➕ Operaciones</a>
+            <a href="notas.html">📝 Registro de Notas</a>
+            <a href="guardar.html" class="active">💾 Guardar Datos</a>
+        </nav>
+    </div>
+    <main class="main-content">
+        <h1>💾 Persistencia en TXT</h1>
+        <div class="card">
+            <h3>Visualización de resultados.txt</h3>
+            <p style="color: #888; margin-bottom: 15px;">Datos guardados desde el motor C++:</p>
+            <iframe src="../resultados/resultados.txt"></iframe>
+        </div>
+        <button class="btn-primary" onclick="location.reload()">Refrescar</button>
+    </main>
+</body>
+</html>

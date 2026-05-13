@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Notas - Software Academy</title>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <nav class="menu">
+                <a href="index.html"><span>🏠</span> Inicio</a>
+                <a href="operaciones.html"><span>➕</span> Operaciones</a>
+                <a href="notas.html" class="active"><span>📝</span> Registro de Notas</a>
+                <a href="guardar.html"><span>💾</span> Guardar Datos</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="welcome-card">
+                <h1>📝 Registro de Notas</h1>
+                <p>Ingrese 5 notas para calcular estadísticas (Rango 0-10).</p>
+                
+                <div class="form-group" style="grid-template-columns: repeat(5, 1fr);">
+                    <input type="number" class="grade" placeholder="N1">
+                    <input type="number" class="grade" placeholder="N2">
+                    <input type="number" class="grade" placeholder="N3">
+                    <input type="number" class="grade" placeholder="N4">
+                    <input type="number" class="grade" placeholder="N5">
+                </div>
+                <button class="btn-primary" onclick="procesarNotas()">Calcular Promedio y Rango</button>
+
+                <div id="grade-terminal" class="terminal" style="display:none;"></div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function procesarNotas() {
+            const inputs = document.querySelectorAll('.grade');
+            let notas = []; [cite: 16]
+            let suma = 0; [cite: 17]
+            let aprobados = 0; [cite: 39]
+            let reprobados = 0; [cite: 40]
+
+            inputs.forEach(input => {
+                let val = parseFloat(input.value) || 0;
+                notas.push(val);
+                suma += val;
+                if (val >= 7) aprobados++; else reprobados++;
+            });
+
+            let promedio = (suma / 5).toFixed(2); [cite: 35, 36]
+            let mayor = Math.max(...notas); [cite: 37]
+            let menor = Math.min(...notas); [cite: 38]
+
+            const term = document.getElementById('grade-terminal');
+            term.style.display = 'block';
+            term.innerHTML = `>> Promedio: ${promedio}<br>>> Nota Mayor: ${mayor}<br>>> Nota Menor: ${menor}<br>>> Aprobados: ${aprobados}<br>>> Reprobados: ${reprobados}`;
+        }
+    </script>
+</body>
+</html>

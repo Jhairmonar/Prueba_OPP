@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Operaciones - UTA</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand"><h1>🍎</h1><h2>SOFTWARE ACADEMY</h2></div>
+        <nav class="menu">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="operaciones.html" class="active">➕ Operaciones</a>
+            <a href="notas.html">📝 Registro de Notas</a>
+            <a href="guardar.html">💾 Guardar Datos</a>
+        </nav>
+    </div>
+    <main class="main-content">
+        <h1>➕ Operaciones Básicas</h1>
+        <div class="card">
+            <div class="form-group">
+                <input type="number" id="n1" placeholder="Num 1">
+                <input type="number" id="n2" placeholder="Num 2">
+            </div>
+            <button class="btn-primary" onclick="calc()">Calcular</button>
+            <div class="terminal" id="res">>> Esperando valores...</div>
+        </div>
+    </main>
+    <script>
+        function calc() {
+            let a = parseFloat(document.getElementById('n1').value);
+            let b = parseFloat(document.getElementById('n2').value);
+            document.getElementById('res').innerText = `>> SUMA: ${a+b} | RESTA: ${a-b} | MULT: ${a*b} | DIV: ${b!=0 ? (a/b).toFixed(2) : 'Error'}`;
+        }
+    </script>
+</body>
+</html>
