@@ -10,7 +10,7 @@ int main() {
     double notas[5]; 
     double suma = 0;
 
-    cout << "--- SOFTWARE ACADEMY UTA ---" << endl;
+    cout << "--- SOFTWARE UTA ---" << endl;
     for(int i=0; i<5; i++) {
         cout << "Nota " << i+1 << ": ";
         cin >> notas[i];
