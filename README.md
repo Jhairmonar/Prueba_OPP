@@ -30,5 +30,3 @@ EXAMEN_U2/
 │   ├── operaciones.html  # Módulo de operaciones matemáticas
 │   ├── notas.html        # Procesamiento de arreglos (Notas)
 │   └── guardar.html      # Visor del archivo resultados.txt
-├── capturas/             # Evidencias de funcionamiento
-└── README.md             # Documentación del proyecto
